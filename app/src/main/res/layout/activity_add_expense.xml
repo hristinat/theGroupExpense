@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_expense"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <Spinner
+        android:id="@+id/who_paid_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/who_paid"/>
+
+    <EditText
+        android:id="@+id/expense_type_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="@string/expense_type"/>
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/amount"/>
+
+    <Button
+        android:id="@+id/add_expense_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add"
+        android:background="@color/colorAccent">
+    </Button>
+
+</LinearLayout>

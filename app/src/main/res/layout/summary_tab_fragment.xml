@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/expenses_total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/expenses"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/expenses_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/divided_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/expenses_total_label"
+        android:text="@string/divided_amount"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/divided_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/expenses_total"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/ViewDividerStyle"
+        android:layout_below="@+id/divided_amount_label" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/member_divided_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/finish_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/member_divided_amount"
+        android:text="@string/finish_trip"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

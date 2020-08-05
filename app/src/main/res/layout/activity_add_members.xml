@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/members_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMembersActivity">
+
+    <TextView
+        android:id="@+id/add_members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/members"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/trip_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:text="@string/trip_name"
+        android:layout_below="@+id/add_members"/>
+
+    <TextView
+        android:id="@+id/trip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/trip_name_label"
+        android:textColor="#000"
+        android:layout_below="@+id/add_members"/>
+
+    <EditText
+        android:id="@+id/member_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:layout_below="@+id/trip_name_label"
+        android:hint="@string/enter_member_name"/>
+
+    <Button
+        android:id="@+id/add_member_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add"
+        android:layout_below="@+id/member_input"
+        android:background="@color/colorAccent"></Button>
+
+</RelativeLayout>
